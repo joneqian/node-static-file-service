@@ -2,8 +2,7 @@
 	"folders":
 	[
 		{
-			"follow_symlinks": true,
-			"path": "."
+			"path": "/D/GitHub/static-file-service"
 		}
 	]
 }
