@@ -19,7 +19,7 @@
 			"file": "src/config.js",
 			"settings":
 			{
-				"buffer_size": 326,
+				"buffer_size": 315,
 				"line_ending": "Windows"
 			}
 		},
@@ -51,9 +51,13 @@
 	"build_system": "Packages/Nodejs/Nodejs.sublime-build",
 	"command_palette":
 	{
-		"height": 173.0,
+		"height": 392.0,
 		"selected_items":
 		[
+			[
+				"re",
+				"Package Control: Remove Package"
+			],
 			[
 				"insta",
 				"Package Control: Install Package"
@@ -79,7 +83,7 @@
 				"Package Control: Install Package"
 			]
 		],
-		"width": 400.0
+		"width": 416.0
 	},
 	"console":
 	{
@@ -137,7 +141,7 @@
 	],
 	"find":
 	{
-		"height": 23.0
+		"height": 76.0
 	},
 	"find_in_files":
 	{
@@ -171,7 +175,7 @@
 	"groups":
 	[
 		{
-			"selected": 3,
+			"selected": 4,
 			"sheets":
 			[
 				{
@@ -207,19 +211,20 @@
 					"file": "src/config.js",
 					"settings":
 					{
-						"buffer_size": 326,
+						"buffer_size": 315,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								151,
-								158
+								315,
+								315
 							]
 						],
 						"settings":
 						{
+							"auto_complete": false,
 							"open_with_edit": true,
 							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
 						},
@@ -267,8 +272,8 @@
 						"selection":
 						[
 							[
-								67,
-								71
+								259,
+								259
 							]
 						],
 						"settings":
@@ -295,8 +300,8 @@
 						"selection":
 						[
 							[
-								0,
-								0
+								2410,
+								2410
 							]
 						],
 						"settings":
@@ -308,7 +313,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 225.0,
+						"translation.y": 282.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
