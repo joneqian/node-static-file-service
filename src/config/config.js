@@ -6,9 +6,14 @@ exports.Compress = {
     match: /css|html/ig
 };
 exports.Default = {
-	file: "index.html",
+    file: "index.html",
     screen_file: "screen_default.jpg",
     device_file: "device__default_list.xml"
 };
 exports.Timeout = 20 * 60 * 1000;
 exports.Secure = null;
+
+exports.Config = {
+    LOG_PATH: './logs/log',
+    ASSET_LISTEN: 1200
+};

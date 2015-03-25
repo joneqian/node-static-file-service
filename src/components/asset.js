@@ -1,15 +1,21 @@
+var worker = require('pm').createWorker();
+var logger_asset = require('./logger').asset;
 var url = require("url");
 var fs = require("fs");
 var path = require("path");
-var mime = require("./mime").types;
-var config = require("./config");
+var mime = require("../config/mime").types;
+var config = require("../config/config");
 
-var Asset = function () {};
 
-Asset.prototype.dispatch = function (request, response) {
+worker.on('message', function(data, from, pid){
+    //logger_http.debug(process.pid + ' http server get message from:' + from + '  data:' + data + ' pid:' + pid);
+});
+
+
+var s = require('http').createServer(function (request, response) {
     response.setHeader("Server", "Node/V5");
     var pathname = url.parse(request.url).pathname;
-    //console.log("qqqqqqq");
+    logger_asset.info("aaaaaaa");
     var errHandle = function (res) {
         res.writeHead(404, "Not Found", {'Content-Type': 'text/plain'});
         res.write("This request URL  was invaild.");
@@ -73,6 +79,18 @@ Asset.prototype.dispatch = function (request, response) {
     };
 
     pathHandle(realPath);
-};
+});
 
-exports.Asset = Asset;
+worker.ready(function(socket, which) {
+    logger_asset.info(which + ':' + socket);
+    debugger;
+    s.emit('connection', socket);
+});
+
+worker.on('suicide', function (by) {
+    logger_asset.info('suicide by ' + by);
+});
+
+process.on('uncaughtException', function (err) {
+    logger_asset.error('Caught Exception:' + err);
+});
