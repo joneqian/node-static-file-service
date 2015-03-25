@@ -1,0 +1,21 @@
+[2015-03-25 20:56:56.408] [INFO] normal - [Wed Mar 25 2015 20:56:56 GMT+0800 (CST)] [master:4978] new assetservice:worker:4987 fork
+[2015-03-25 20:57:22.450] [INFO] asset - 1200:[object Object]
+[2015-03-25 20:57:22.461] [INFO] asset - 1200:[object Object]
+[2015-03-25 20:57:22.536] [INFO] asset - aaaaaaa
+[2015-03-25 20:57:22.604] [INFO] asset - aaaaaaa
+[2015-03-25 20:57:53.278] [INFO] normal - [Wed Mar 25 2015 20:57:53 GMT+0800 (CST)] [master:4978] assetservice:worker:4987 quit, code: null, signal: SIGINT
+[2015-03-25 20:57:59.564] [INFO] normal - [Wed Mar 25 2015 20:57:59 GMT+0800 (CST)] [master:5479] new assetservice:worker:5488 fork
+[2015-03-25 20:57:59.572] [INFO] normal - [Wed Mar 25 2015 20:57:59 GMT+0800 (CST)] [master:5479] new assetservice:worker:5493 fork
+[2015-03-25 20:58:03.896] [INFO] asset - 1200:[object Object]
+[2015-03-25 20:58:03.898] [INFO] asset - 1200:[object Object]
+[2015-03-25 20:58:03.909] [INFO] asset - aaaaaaa
+[2015-03-25 20:58:23.013] [INFO] asset - 1200:[object Object]
+[2015-03-25 20:58:23.019] [INFO] asset - aaaaaaa
+[2015-03-25 20:58:37.269] [INFO] asset - 1200:[object Object]
+[2015-03-25 20:58:37.269] [INFO] asset - aaaaaaa
+[2015-03-25 20:59:32.083] [INFO] normal - [Wed Mar 25 2015 20:59:32 GMT+0800 (CST)] [master:5479] assetservice:worker:5488 quit, code: null, signal: SIGINT
+[2015-03-25 20:59:32.084] [INFO] normal - [Wed Mar 25 2015 20:59:32 GMT+0800 (CST)] [master:5479] assetservice:worker:5493 quit, code: null, signal: SIGINT
+[2015-03-25 21:00:21.438] [INFO] normal - [Wed Mar 25 2015 21:00:21 GMT+0800 (CST)] [master:6485] new assetservice:worker:6494 fork
+[2015-03-25 21:00:21.449] [INFO] normal - [Wed Mar 25 2015 21:00:21 GMT+0800 (CST)] [master:6485] new assetservice:worker:6499 fork
+[2015-03-25 21:00:27.962] [INFO] normal - [Wed Mar 25 2015 21:00:27 GMT+0800 (CST)] [master:6485] assetservice:worker:6494 quit, code: null, signal: SIGINT
+[2015-03-25 21:00:27.963] [INFO] normal - [Wed Mar 25 2015 21:00:27 GMT+0800 (CST)] [master:6485] assetservice:worker:6499 quit, code: null, signal: SIGINT
