@@ -2,8 +2,8 @@ var logger_normal = require('./components/logger').normal;
 var config = require('./config/config');
 
 var app = require('pm').createMaster({
-	'pidfile': 'static-file-service.pid',
-	'statusfile': 'status.log'
+	'pidfile':  __dirname +  'static-file-service.pid',
+	'statusfile':  __dirname + 'status.log'
 });
 
 app.on('giveup', function(name, fatals, pause) {
@@ -30,7 +30,7 @@ app.on('quit', function(name, pid, code, signal) {
 
 app.register('assetService', __dirname + '/components/asset.js', {
 	'listen': [config.Config.ASSET_LISTEN],
-	'children': 1
+	'children': 2
 });
 
 

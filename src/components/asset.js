@@ -15,7 +15,6 @@ worker.on('message', function(data, from, pid){
 var s = require('http').createServer(function (request, response) {
     response.setHeader("Server", "Node/V5");
     var pathname = url.parse(request.url).pathname;
-    logger_asset.info("aaaaaaa");
     var errHandle = function (res) {
         res.writeHead(404, "Not Found", {'Content-Type': 'text/plain'});
         res.write("This request URL  was invaild.");
@@ -82,8 +81,6 @@ var s = require('http').createServer(function (request, response) {
 });
 
 worker.ready(function(socket, which) {
-    logger_asset.info(which + ':' + socket);
-    debugger;
     s.emit('connection', socket);
 });
 

@@ -14,6 +14,6 @@ exports.Timeout = 20 * 60 * 1000;
 exports.Secure = null;
 
 exports.Config = {
-    LOG_PATH: './logs/log',
+    LOG_PATH:  process.cwd()  +  '/logs/log',
     ASSET_LISTEN: 1200
 };
