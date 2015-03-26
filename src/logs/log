@@ -19,3 +19,27 @@
 [2015-03-25 21:00:21.449] [INFO] normal - [Wed Mar 25 2015 21:00:21 GMT+0800 (CST)] [master:6485] new assetservice:worker:6499 fork
 [2015-03-25 21:00:27.962] [INFO] normal - [Wed Mar 25 2015 21:00:27 GMT+0800 (CST)] [master:6485] assetservice:worker:6494 quit, code: null, signal: SIGINT
 [2015-03-25 21:00:27.963] [INFO] normal - [Wed Mar 25 2015 21:00:27 GMT+0800 (CST)] [master:6485] assetservice:worker:6499 quit, code: null, signal: SIGINT
+[2015-03-26 09:28:05.147] [INFO] normal - [Thu Mar 26 2015 09:28:05 GMT+0800 (CST)] [master:8325] new assetservice:worker:8334 fork
+[2015-03-26 09:28:05.156] [INFO] normal - [Thu Mar 26 2015 09:28:05 GMT+0800 (CST)] [master:8325] new assetservice:worker:8339 fork
+[2015-03-26 09:28:29.438] [INFO] normal - [Thu Mar 26 2015 09:28:29 GMT+0800 (CST)] [master:8325] assetservice:worker:8339 quit, code: null, signal: SIGINT
+[2015-03-26 09:28:29.439] [INFO] normal - [Thu Mar 26 2015 09:28:29 GMT+0800 (CST)] [master:8325] assetservice:worker:8334 quit, code: null, signal: SIGINT
+[2015-03-26 09:37:28.630] [INFO] normal - [Thu Mar 26 2015 09:37:28 GMT+0800 (CST)] [master:11694] new assetservice:worker:11703 fork
+[2015-03-26 09:37:28.640] [INFO] normal - [Thu Mar 26 2015 09:37:28 GMT+0800 (CST)] [master:11694] new assetservice:worker:11708 fork
+[2015-03-26 09:37:34.427] [INFO] normal - [Thu Mar 26 2015 09:37:34 GMT+0800 (CST)] [master:11694] assetservice:worker:11703 quit, code: null, signal: SIGINT
+[2015-03-26 09:37:34.428] [INFO] normal - [Thu Mar 26 2015 09:37:34 GMT+0800 (CST)] [master:11694] assetservice:worker:11708 quit, code: null, signal: SIGINT
+[2015-03-26 09:56:53.735] [INFO] normal - [Thu Mar 26 2015 09:56:53 GMT+0800 (CST)] [master:17189] new assetservice:worker:17198 fork
+[2015-03-26 09:56:53.746] [INFO] normal - [Thu Mar 26 2015 09:56:53 GMT+0800 (CST)] [master:17189] new assetservice:worker:17203 fork
+[2015-03-26 09:56:55.633] [INFO] normal - [Thu Mar 26 2015 09:56:55 GMT+0800 (CST)] [master:17189] assetservice:worker:17198 quit, code: null, signal: SIGINT
+[2015-03-26 09:56:55.635] [INFO] normal - [Thu Mar 26 2015 09:56:55 GMT+0800 (CST)] [master:17189] assetservice:worker:17203 quit, code: null, signal: SIGINT
+[2015-03-26 10:03:35.154] [INFO] normal - [Thu Mar 26 2015 10:03:35 GMT+0800 (CST)] [master:19104] new assetservice:worker:19113 fork
+[2015-03-26 10:03:35.162] [INFO] normal - [Thu Mar 26 2015 10:03:35 GMT+0800 (CST)] [master:19104] new assetservice:worker:19118 fork
+[2015-03-26 10:03:36.868] [INFO] normal - [Thu Mar 26 2015 10:03:36 GMT+0800 (CST)] [master:19104] assetservice:worker:19113 quit, code: null, signal: SIGINT
+[2015-03-26 10:03:36.869] [INFO] normal - [Thu Mar 26 2015 10:03:36 GMT+0800 (CST)] [master:19104] assetservice:worker:19118 quit, code: null, signal: SIGINT
+[2015-03-26 10:03:45.313] [INFO] normal - [Thu Mar 26 2015 10:03:45 GMT+0800 (CST)] [master:19194] new assetservice:worker:19203 fork
+[2015-03-26 10:03:45.321] [INFO] normal - [Thu Mar 26 2015 10:03:45 GMT+0800 (CST)] [master:19194] new assetservice:worker:19208 fork
+[2015-03-26 10:04:32.713] [INFO] normal - [Thu Mar 26 2015 10:04:32 GMT+0800 (CST)] [master:19194] assetservice:worker:19203 quit, code: null, signal: SIGINT
+[2015-03-26 10:04:32.715] [INFO] normal - [Thu Mar 26 2015 10:04:32 GMT+0800 (CST)] [master:19194] assetservice:worker:19208 quit, code: null, signal: SIGINT
+[2015-03-26 10:04:36.054] [INFO] normal - [Thu Mar 26 2015 10:04:36 GMT+0800 (CST)] [master:19577] new assetservice:worker:19586 fork
+[2015-03-26 10:04:36.068] [INFO] normal - [Thu Mar 26 2015 10:04:36 GMT+0800 (CST)] [master:19577] new assetservice:worker:19591 fork
+[2015-03-26 10:04:53.099] [INFO] normal - [Thu Mar 26 2015 10:04:53 GMT+0800 (CST)] [master:19577] assetservice:worker:19586 quit, code: null, signal: SIGINT
+[2015-03-26 10:04:53.101] [INFO] normal - [Thu Mar 26 2015 10:04:53 GMT+0800 (CST)] [master:19577] assetservice:worker:19591 quit, code: null, signal: SIGINT
