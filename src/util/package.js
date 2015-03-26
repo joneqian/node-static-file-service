@@ -16,7 +16,7 @@ package.pack = function(commandID,context,cb){
         return;
     }
 
-    var bytebuf = new ByteBuffer().encoding('ascii').bigEndian();
+    var bytebuf = new ByteBuffer().encoding('utf8').bigEndian();
 
     var buf_len = Buffer.byteLength(context);
     var buf = new Buffer(buf_len);
@@ -36,7 +36,7 @@ package.unpack = function(data,cb){
         return;
     }
 
-    var bytebuf = new ByteBuffer(data).encoding('ascii').bigEndian();
+    var bytebuf = new ByteBuffer(data).encoding('utf8').bigEndian();
 
     var len = data.length - 2;
     var resArr = bytebuf.ushort().byteArray(null,len).unpack();

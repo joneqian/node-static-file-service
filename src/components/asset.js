@@ -1,10 +1,10 @@
 var worker = require('pm').createWorker();
 var logger_asset = require('./logger').asset;
-var url = require("url");
-var fs = require("fs");
-var path = require("path");
-var mime = require("../config/mime").types;
-var config = require("../config/config");
+var url = require('url');
+var fs = require('fs');
+var path = require('path');
+var mime = require('../config/mime').types;
+var config = require('../config/config');
 
 
 worker.on('message', function(data, from, pid){
