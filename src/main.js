@@ -4,7 +4,7 @@ var config = require('./config/config');
 global.ASSET_LISTEN = config.Config.ASSET_LISTEN;
 
 if (process.argv.length  === 3) {
-	var arg2 = process.argv.splice(2);
+	var arg2 = process.argv[2];
 
 	if (arg2 == "help") {
 		console.log("static file service command:");
