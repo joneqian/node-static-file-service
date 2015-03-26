@@ -9,7 +9,7 @@ if (process.argv.length  === 3) {
 	if (arg2 == "help") {
 		console.log("static file service command:");
 		console.log("help: node main.js help");
-		console.log("run service: node main.js [port]  ----  the default port is " + config.Config.ASSET_LISTEN);
+		console.log("run server: node main.js [port]  ----  the default port is " + config.Config.ASSET_LISTEN);
 		process.exit(0);
 	} else if (isNaN(Number(arg2))) {
 		console.log("Unknown command.Plese run 'node main.js help' .");
