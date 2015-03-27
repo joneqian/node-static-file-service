@@ -26,7 +26,7 @@ var s = require('http').createServer(function (request, response) {
         return;
     }
 
-    var realPath = path.join("assets", path.normalize(pathname.replace(/\.\./g, "")));
+    var realPath = path.join(config.Config.ASSET_PATH, path.normalize(pathname.replace(/\.\./g, "")));
     var pathHandle = function (realPath) {
         fs.stat(realPath, function (err, stats) {
             if (err) {

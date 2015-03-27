@@ -43,3 +43,15 @@
 [2015-03-26 10:04:36.068] [INFO] normal - [Thu Mar 26 2015 10:04:36 GMT+0800 (CST)] [master:19577] new assetservice:worker:19591 fork
 [2015-03-26 10:04:53.099] [INFO] normal - [Thu Mar 26 2015 10:04:53 GMT+0800 (CST)] [master:19577] assetservice:worker:19586 quit, code: null, signal: SIGINT
 [2015-03-26 10:04:53.101] [INFO] normal - [Thu Mar 26 2015 10:04:53 GMT+0800 (CST)] [master:19577] assetservice:worker:19591 quit, code: null, signal: SIGINT
+[2015-03-27 15:46:52.196] [INFO] normal - [Fri Mar 27 2015 15:46:52 GMT+0800 (CST)] [master:10613] new assetservice:worker:10631 fork
+[2015-03-27 15:46:52.213] [INFO] normal - [Fri Mar 27 2015 15:46:52 GMT+0800 (CST)] [master:10613] new assetservice:worker:10636 fork
+[2015-03-27 15:54:11.385] [INFO] normal - [Fri Mar 27 2015 15:54:11 GMT+0800 (CST)] [master:10613] assetservice:worker:10636 quit, code: null, signal: SIGINT
+[2015-03-27 15:54:11.386] [INFO] normal - [Fri Mar 27 2015 15:54:11 GMT+0800 (CST)] [master:10613] assetservice:worker:10631 quit, code: null, signal: SIGINT
+[2015-03-27 15:54:14.117] [INFO] normal - [Fri Mar 27 2015 15:54:14 GMT+0800 (CST)] [master:14469] new assetservice:worker:14478 fork
+[2015-03-27 15:54:14.127] [INFO] normal - [Fri Mar 27 2015 15:54:14 GMT+0800 (CST)] [master:14469] new assetservice:worker:14483 fork
+[2015-03-27 15:54:47.355] [INFO] normal - [Fri Mar 27 2015 15:54:47 GMT+0800 (CST)] [master:14469] assetservice:worker:14478 quit, code: null, signal: SIGINT
+[2015-03-27 15:54:47.357] [INFO] normal - [Fri Mar 27 2015 15:54:47 GMT+0800 (CST)] [master:14469] assetservice:worker:14483 quit, code: null, signal: SIGINT
+[2015-03-27 16:11:06.867] [INFO] normal - [Fri Mar 27 2015 16:11:06 GMT+0800 (CST)] [master:23748] new assetservice:worker:23757 fork
+[2015-03-27 16:11:06.878] [INFO] normal - [Fri Mar 27 2015 16:11:06 GMT+0800 (CST)] [master:23748] new assetservice:worker:23762 fork
+[2015-03-27 16:12:49.490] [INFO] normal - [Fri Mar 27 2015 16:12:49 GMT+0800 (CST)] [master:23748] assetservice:worker:23762 quit, code: null, signal: SIGINT
+[2015-03-27 16:12:49.491] [INFO] normal - [Fri Mar 27 2015 16:12:49 GMT+0800 (CST)] [master:23748] assetservice:worker:23757 quit, code: null, signal: SIGINT
