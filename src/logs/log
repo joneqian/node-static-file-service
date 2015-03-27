@@ -55,3 +55,7 @@
 [2015-03-27 16:11:06.878] [INFO] normal - [Fri Mar 27 2015 16:11:06 GMT+0800 (CST)] [master:23748] new assetservice:worker:23762 fork
 [2015-03-27 16:12:49.490] [INFO] normal - [Fri Mar 27 2015 16:12:49 GMT+0800 (CST)] [master:23748] assetservice:worker:23762 quit, code: null, signal: SIGINT
 [2015-03-27 16:12:49.491] [INFO] normal - [Fri Mar 27 2015 16:12:49 GMT+0800 (CST)] [master:23748] assetservice:worker:23757 quit, code: null, signal: SIGINT
+[2015-03-27 16:18:48.496] [INFO] normal - [Fri Mar 27 2015 16:18:48 GMT+0800 (CST)] [master:27561] new assetservice:worker:27570 fork
+[2015-03-27 16:18:48.504] [INFO] normal - [Fri Mar 27 2015 16:18:48 GMT+0800 (CST)] [master:27561] new assetservice:worker:27575 fork
+[2015-03-27 16:19:24.243] [INFO] normal - [Fri Mar 27 2015 16:19:24 GMT+0800 (CST)] [master:27561] assetservice:worker:27570 quit, code: null, signal: SIGINT
+[2015-03-27 16:19:24.245] [INFO] normal - [Fri Mar 27 2015 16:19:24 GMT+0800 (CST)] [master:27561] assetservice:worker:27575 quit, code: null, signal: SIGINT
