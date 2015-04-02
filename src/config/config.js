@@ -1,3 +1,5 @@
+var path = require('path');
+
 exports.Expires = {
     fileMatch: /^(gif|bmp|png|jpg|js|css)$/ig,
     maxAge: 5
@@ -14,7 +16,7 @@ exports.Timeout = 20 * 60 * 1000;
 exports.Secure = null;
 
 exports.Config = {
-    LOG_PATH:  process.cwd()  +  '/logs/log',
+    LOG_PATH: path.dirname(__dirname) + '/logs/log',
     ASSET_LISTEN: 1200,
-    ASSET_PATH: '/home/qianqing/src/node-static-file-service/src/assets'
+    ASSET_PATH: path.dirname(__dirname) + '/assets'
 };
