@@ -23,12 +23,12 @@ if (process.argv.length > 3) {
 	console.log('Too many arguments given.');
 	console.log("Use 'node main.js help'.");
 	process.exit(0);
-};
+}
 
 
 var app = require('pm').createMaster({
-	'pidfile':  __dirname +  'static-file-service.pid',
-	'statusfile':  __dirname + 'status.log'
+	'pidfile':  __dirname +  '/static-file-service.pid',
+	'statusfile':  __dirname + '/status.log'
 });
 
 app.on('giveup', function(name, fatals, pause) {

@@ -15,7 +15,7 @@ worker.on('message', function(data, from, pid) {
 var s = require('http').createServer(function(request, response) {
     response.setHeader("Server", "Node/V5");
     var errHandle = function(res, error) {
-        var err_info = error || 'This request URL  was invaild.'
+        var err_info = error || 'This request URL  was invalid.';
         res.writeHead(404, 'Not Found', {
             'Content-Type': 'text/plain'
         });
