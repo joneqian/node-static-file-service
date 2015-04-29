@@ -94,8 +94,8 @@ var s = require('http').createServer(function(request, response) {
                         response.writeHead(statusCode, reasonPhrase);
                         stream.pipe(response);
                     };
-
-                    var raw = fs.createReadStream(realPath);
+                    var opt = { flags: 'r', encoding: null,fd: null, mode: 0666, autoClose: true};
+                    var raw = fs.createReadStream(realPath, opt);
                     compressHandle(raw, 200);
                 }
             }
