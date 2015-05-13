@@ -6,7 +6,7 @@ log4js.configure({
     type: 'console'
   }, {
     type: 'file',
-    filename: config.Config.LOG_PATH,
+    filename: config.Common.LOG_PATH,
     pattern: '_yyyy-MM-dd',
     maxLogSize: 20480,
     alwaysIncludePattern: false,
