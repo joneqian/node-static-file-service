@@ -17,11 +17,10 @@ process.on('uncaughtException', function(err) {
 });
 
 process.on('exit', function (code) {
-    db.close();
+    mongodb.close();
 });
 
 process.on('SIGINT', function (code) {
-    db.close();
     process.exit(0);
 });
 
@@ -140,7 +139,7 @@ mongodb.open(function(err) {
                         return;
                     }
 
-                    response.setHeader("SCREEN-DUMP-ID", doc[0]._id);
+                    response.setHeader("Screen-Dump-ID", doc[0]._id);
                     response.setHeader('Content-Length', doc[0].imgData.length());
                     response.setHeader("Last-Modified", utils.formatTime(doc[0].ts));
 
@@ -154,13 +153,10 @@ mongodb.open(function(err) {
         };
 
         var query_screen_dump_set = function(obj) {
-            var start = new Date(obj['start']);
-            var end = new Date(obj['end']);
-
-            var filter = {'ts': {$gte: start, $lte: end}};
-            var sort = {'sort': [['ts', -1]]};
+            var filter = {'ts': {$gte: new Date(obj['start']), $lte: new Date(obj['end'])}};
+            var sort = {'sort': [['ts', obj['sort'] || -1]]};
             var col = {'_id':1};
-            itemProvider.find(obj['name'], filter, sort, col, function (err, doc) {
+            itemProvider.find(obj['name'], filter, col, sort, function (err, doc) {
                 if(err){
                     logger_asset.error('mongodb find err:' + err);
                     errHandle(response, 'query error');
