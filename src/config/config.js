@@ -24,7 +24,7 @@ exports.Common = {
         port			: 27017,
         database        : 'screen_dump',
         poolSize		: 5,
-        collection_size : 2048000,
+        collection_size : 2*1024*1024*1024,
         collection_max	: 50000
     }
 };

@@ -95,7 +95,7 @@ mongodb.open(function(err) {
                 case 'query_screen_dump_set':
                     try {
                         var obj = JSON.parse(buffer);
-                        if (obj['name'] === undefined || obj['start'] === undefined || obj['end'] === undefined) {
+                        if (obj['host'] === undefined || obj['name'] === undefined || obj['start'] === undefined || obj['end'] === undefined) {
                             errHandle(response, 'data format error');
                             return;
                         }
@@ -109,7 +109,7 @@ mongodb.open(function(err) {
                 case 'query_screen_dump':
                     try {
                         var obj = JSON.parse(buffer);
-                        if (obj['name'] === undefined || obj['id'] === undefined) {
+                        if (obj['host'] === undefined || obj['name'] === undefined || obj['id'] === undefined) {
                             errHandle(response, 'data format error');
                             return;
                         }
@@ -129,7 +129,7 @@ mongodb.open(function(err) {
 
         var query_screen_dump = function(obj) {
             var filter = {'_id': new ObjectID(obj['id'])};
-            itemProvider.find(obj['name'], filter, null, null, function (err, doc) {
+            itemProvider.find(obj['host'] + '##' + obj['name'], filter, null, null, function (err, doc) {
                 if(err){
                     logger_asset.error('mongodb find err:' + err);
                     errHandle(response, 'query error');
@@ -156,7 +156,7 @@ mongodb.open(function(err) {
             var filter = {'ts': {$gte: new Date(obj['start']), $lte: new Date(obj['end'])}};
             var sort = {'sort': [['ts', obj['sort'] || -1]]};
             var col = {'_id':1};
-            itemProvider.find(obj['name'], filter, col, sort, function (err, doc) {
+            itemProvider.find(obj['host'] + '##' + obj['name'], filter, col, sort, function (err, doc) {
                 if(err){
                     logger_asset.error('mongodb find err:' + err);
                     errHandle(response, 'query error');
